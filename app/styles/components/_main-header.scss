@@ -2,6 +2,17 @@
 	@include centringVH(50%,50%);
 	width:33%;
 	max-width: 34rem;
+
+	&::after {
+		content: '';
+		width: 2.4rem;
+		height: 2.4rem;
+		display: block;
+		border-left: 0.1rem solid $primaryTextColour;
+		border-bottom: 0.1rem solid $primaryTextColour;
+		transform: rotate(-45deg);
+		margin:4.5rem auto 0;
+	}
 }
 
 .main-header__figure {
