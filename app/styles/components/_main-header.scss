@@ -1,0 +1,31 @@
+.main-header {
+	@include centringVH(50%,50%);
+	width:33%;
+	max-width: 34rem;
+}
+
+.main-header__figure {
+	margin:0 0 6.6rem;
+}
+
+.main-header__tagline {
+	@include customFont('Lato');
+	color: $primaryTextColour;
+	font-size: 1.8rem;
+	text-transform: uppercase;
+	text-align: center;
+	display: block;
+}
+
+
+@media screen and (max-width: $mobileMedium) {
+
+	.main-header{
+		@include centringVH(50%,50%);
+		width:60%
+	}
+
+	.main-header__tagline {
+		font-size:5vw;
+	}
+}

@@ -1,0 +1,55 @@
+//Index:
+
+//Linear gradient mixin (linear-gradient)
+
+//Vertical and horizontal centring mixin (centringVH)
+
+//Custom fonts mixin (customFont)
+	//Available fonts, used as keywords, are :Lato and Grotesque.
+	//Available weights, used as keywords, are :light and bold. If none specified, weight will be normal
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+@mixin linear-gradient($direction,$stops...) {
+	@if is-direction($direction) == false {
+		$stops:$direction,$stops;
+		$direction: 180deg;
+	}
+
+	background: nth(nth($stops,1),1);
+	background: -webkit-linear-gradient(legacy-direction($direction),$stops);
+	background: linear-gradient($direction, $stops);
+}
+
+
+@mixin centringVH($x,$y, $zindex:null) {
+	position: absolute;
+	left: $x;
+	top: $y;
+	-webkit-transform:translate(-$x,-$y);
+	-ms-transform:translate(-$x,-$y);
+	transform:translate(-$x,-$y);
+	z-index: $zindex;
+}
+
+
+@mixin customFont($name:null,$weight:null) {
+
+
+	@if ($name == false or $name == 'Lato') {
+		$name: $customFont;
+	} @else if $name == 'Grotesque' {
+		$name: $customSecondaryFont;
+	}
+
+	@if $weight == false {
+		$weight: normal;
+	} @else if $weight == 'light' {
+		$weight: 300;
+	} @else if $weight == 'bold' {
+		$weight: 700;
+	}
+
+	font-family: $name;
+	font-weight: $weight;
+}
