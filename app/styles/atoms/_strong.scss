@@ -1,0 +1,4 @@
+.emphasis {
+	@include customFont('Lato','bold');
+	font-size:$defaultFontSize;
+}

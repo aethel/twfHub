@@ -1,0 +1,5 @@
+.time-element {
+	@include customFont('Geogrotesque');
+	color: transparentize($primaryTextColour,0.5);
+	font-size: $defaultFontSize;
+}

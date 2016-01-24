@@ -1,5 +1,5 @@
 .main-header {
-	@include centringVH(50%,50%);
+	@include centringVH(50%,50%,9999);
 	width:33%;
 	max-width: 34rem;
 
@@ -22,7 +22,7 @@
 .main-header__tagline {
 	@include customFont('Lato');
 	color: $primaryTextColour;
-	font-size: 1.8rem;
+	font-size:$defaultFontSize*1.1;
 	text-transform: uppercase;
 	text-align: center;
 	display: block;

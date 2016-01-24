@@ -1,0 +1,5 @@
+.paragraph {
+	@include customFont('Lato');
+	font-size:$defaultFontSize;
+	line-height: 1.9rem;
+}

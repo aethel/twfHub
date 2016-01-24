@@ -1,0 +1,18 @@
+.content-item {
+	background:transparentize($primaryTextColour, 0.9);
+	padding:2.8rem 5.6rem 5rem 6.5rem;
+}
+
+.content-item__header {
+	background-image: url(../../images/logo-small-sprite.svg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-size: 9rem auto;
+	background-color: transparent;
+	height:3rem;
+	padding:0 0 0 10rem;
+
+	&:hover {
+		background-position: 0 107%;
+	}
+}

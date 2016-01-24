@@ -1,0 +1,13 @@
+h2,
+.h2 {
+	@include customFont('Geogrotesque');
+	color: transparentize($primaryTextColour,0.5);
+	font-size: $defaultFontSize;
+}
+
+h3,
+.h3 {
+	@include customFont('Geogrotesque');
+	color: $primaryTextColour;
+	font-size: $defaultFontSize*2.5;
+}
