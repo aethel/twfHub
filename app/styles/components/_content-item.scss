@@ -6,13 +6,12 @@
 .content-item__header {
 	background-image: url(../../images/logo-small-sprite.svg);
 	background-repeat: no-repeat;
-	background-position: 0 0;
+	background-position: 0 -10%;
 	background-size: 9rem auto;
 	background-color: transparent;
-	height:3rem;
 	padding:0 0 0 10rem;
 
 	&:hover {
-		background-position: 0 107%;
+		background-position: 0 112%;
 	}
 }
