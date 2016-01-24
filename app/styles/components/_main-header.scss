@@ -12,7 +12,7 @@
 	@include customFont('Lato');
 	color: $primaryTextColour;
 	font-size: 1.8rem;
-	text-transform: capitalize;
+	text-transform: uppercase;
 	text-align: center;
 	display: block;
 }
