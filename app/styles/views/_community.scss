@@ -13,5 +13,11 @@
         margin:0 0 9rem 6.5rem;
     }
     
-
+    .inline-list__item .h3 {
+        font-size:$defaultFontSize*1.7;
+    }
+    
+    .inline-list__item .logo-header {
+        background: url(../../images/logo-micro.svg) no-repeat 0 0 /6.9rem auto transparent;
+    }
 }

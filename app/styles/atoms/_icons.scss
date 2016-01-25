@@ -10,13 +10,13 @@
 .icon-fb {
     &:before {
         @extend %icon;
-        background-position: -4rem 0;
+        background-position: -4rem -0.3rem;
     }
 
     &:hover,
     &:focus {
         &:before {
-            background-position: -4rem -4rem;
+            background-position: -4rem -4.3rem;
         }   
     }
 }
@@ -25,13 +25,13 @@
 .icon-youtube {
     &:before {
         @extend %icon;
-        background-position:-12rem 0;
+        background-position:-12rem 0.1rem;
     }
     
     &:hover,
     &:focus {
         &:before {
-            background-position: -12rem -4rem;
+            background-position: -12rem -4.1rem;
         }   
     }
 }
