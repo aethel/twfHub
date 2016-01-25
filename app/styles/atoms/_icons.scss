@@ -1,0 +1,67 @@
+%icon {
+    content:'';
+    width: 4rem;
+    height: 4rem;    
+    display: inline-block;
+    background: url(../../images/media-icons-sprite.svg) no-repeat transparent;
+    background-size:auto 8rem;
+}
+
+.icon-fb {
+    &:before {
+        @extend %icon;
+        background-position: -4rem 0;
+    }
+
+    &:hover,
+    &:focus {
+        &:before {
+            background-position: -4rem -4rem;
+        }   
+    }
+}
+
+
+.icon-youtube {
+    &:before {
+        @extend %icon;
+        background-position:-12rem 0;
+    }
+    
+    &:hover,
+    &:focus {
+        &:before {
+            background-position: -12rem -4rem;
+        }   
+    }
+}
+
+.icon-linkedin {
+    &:before {
+        @extend %icon;
+        background-position: -8rem 0;
+    }
+    
+    &:hover,
+    &:focus {
+        &:before {
+            background-position: -8rem -4rem;
+        }   
+    }
+}
+
+
+.icon-twitter {
+    &:before {
+        @extend %icon;
+        background-position: 0 0;
+    }    
+    
+    &:hover,
+    &:focus {
+        &:before {
+            background-position: 0 -4rem;
+        }   
+    }
+
+}
