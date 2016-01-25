@@ -1,17 +1,32 @@
 .content-item {
 	background:transparentize($primaryTextColour, 0.9);
 	padding:2.8rem 5.6rem 5rem 6.5rem;
+    position: relative;
+    
+   &.highlighted::before {
+        content: '';
+        display: block;
+        width: 0.7rem;
+        height: 100%;
+        background: $primaryAccentColour;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    
+    .time-element{
+        margin:0 0 2rem 0;
+        display: block;
+    }
 }
 
-.content-item__header {
-	background-image: url(../../images/logo-small-sprite.svg);
-	background-repeat: no-repeat;
-	background-position: 0 -10%;
-	background-size: 9rem auto;
-	background-color: transparent;
-	padding:0 0 0 10rem;
-
-	&:hover {
-		background-position: 0 112%;
-	}
+.content-item:hover,
+.content-item:focus {
+     background: $primaryAccentColour;
+    
+    .logo-header {
+		background-position: 0 102%;
+	} 
+    
 }
+

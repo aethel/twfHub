@@ -1,0 +1,13 @@
+.logo-header {
+	background-image: url(../../images/logo-small-sprite.svg);
+	background-repeat: no-repeat;
+	background-position: 0 -10%;
+	background-size: 9rem auto;
+	background-color: transparent;
+	padding:0 0 0 10rem;
+    margin:0 0 1.5rem 0;
+}
+
+.logo-header > .h3 {
+    line-height: 0.9;
+}

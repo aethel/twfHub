@@ -3,11 +3,21 @@ h2,
 	@include customFont('Geogrotesque');
 	color: transparentize($primaryTextColour,0.5);
 	font-size: $defaultFontSize;
+    margin:0 0 1.6rem 0;
+    padding:0 0 1.5rem 0;
 }
 
 h3,
 .h3 {
 	@include customFont('Geogrotesque');
 	color: $primaryTextColour;
-	font-size: $defaultFontSize*2.5;
+	font-size: $defaultFontSize*2.5;   
+}
+
+h4,
+.h4 {
+	@include customFont('Lato','bold');
+	color: $primaryTextColour;
+	font-size: $defaultFontSize*1.25;
+    
 }

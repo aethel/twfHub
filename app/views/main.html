@@ -1,78 +1,99 @@
 <nav class="float-nav">
-		<ul>
-				<li><a href="#intro" ng-click="main.scrollToSection('intro')">O</a></li>
-				<li><a href="#hub-links" ng-click="main.scrollToSection('hub-links')">O</a></li>
-				<li><a href="#community" ng-click="main.scrollToSection('community')">O</a></li>
-		</ul>
+    <ul>
+        <li><a href="#intro" ng-click="main.scrollToSection('intro')">O</a></li>
+        <li><a href="#hub-links" ng-click="main.scrollToSection('hub-links')">O</a></li>
+        <li><a href="#community" ng-click="main.scrollToSection('community')">O</a></li>
+    </ul>
 </nav>
 <section class="content-section pattern-overlay" id="intro">
-	<video-bg class="video-bg" playlist="main.videos"></video-bg>
-		<header class="main-header">
-				<h1>
-						<figure class="main-header__figure">
-						<img class="main-header__image" src="../../images/logo-large.svg" alt=""></figure>
-						<span class="main-header__tagline">We are growing</span>
-				</h1>
-		</header>
+    <video-bg class="video-bg" playlist="main.videos"></video-bg>
+    <header class="main-header">
+        <h1>
+            <figure class="main-header__figure">
+                <img class="main-header__image" src="../../images/logo-large.svg" alt=""></figure>
+            <span class="main-header__tagline">We are growing</span>
+        </h1>
+    </header>
 </section>
 <section class="content-section" id="hub-links">
-		<h2 class="h2">Upcoming Events</h2>
-		<ul>
-				<li><a href="">
-								<article class="content-item">
-									 <time class="time-element"></time>
-										<header class="content-item__header">
-												<h3 class="h3"><span class="visually-hidden">TWF</span><span>Soon</span></h3>
-										</header>
-									 <content-box content="main.blurbs.Upcoming"></content-box>
-								</article>
-						</a>
-				</li>
-		</ul>
-		<h2 class="h2">Past Events</h2>
-		<ul class="tiles4by4">
-				<li class="tiles4by4__item"><a class="tiles4by4__content" href="">
-								<article class="content-item">
-									 <time class="time-element" datetime="2015-05">May 2015</time>
-										<header class="content-item__header">
-												<h3 class="h3"><span class="visually-hidden">TWF</span> <span>Source</span></h3>
-										</header>
-										 <content-box content="main.blurbs.pastEventA"></content-box>
-								</article>
-						</a>
-				</li>
-				<li class="tiles4by4__item"><a class="tiles4by4__content" href="">
-								<article class="content-item">
-									 <time class="time-element" datetime="2015-05">May 2015</time>
-										<header class="content-item__header">
-												<h3 class="h3"><span class="visually-hidden">TWF</span> <span>Interactive</span></h3>
-										</header>
-										 <content-box content="main.blurbs.pastEventB"></content-box>
-								</article>
-						</a>
-				</li>
-				<li class="tiles4by4__item"><a class="tiles4by4__content" href="">
-								<article class="content-item">
-									 <time class="time-element" datetime="2015-05">May 2015</time>
-										<header class="content-item__header">
-											<h3 class="h3"><span class="visually-hidden">TWF</span> <span>Hackaton</span></h3>
-										</header>
-										 <content-box content="main.blurbs.pastEventC"></content-box>
-								</article>
-						</a>
-				</li>
-		</ul>
+    <h2 class="h2 fading-separator">Upcoming Events</h2>
+    <ul class="margin-bottom56">
+        <li><a href="">
+            <article class="content-item highlighted">
+                <time class="time-element"></time>
+                <header class="logo-header">
+                    <h3 class="h3"><span class="visually-hidden">TWF</span><span>Soon</span></h3>
+                </header>
+                <content-box content="main.blurbs.upcomingEvent"></content-box>
+            </article>
+            </a>
+        </li>
+    </ul>
+    <h2 class="h2 fading-separator">Past Events</h2>
+    <ul class="tiles4by4">
+        <li class="tiles4by4__item"><a class="tiles4by4__content" href="">
+            <article class="content-item">
+                <time class="time-element" datetime="2015-05">May 2015</time>
+                <header class="logo-header">
+                    <h3 class="h3"><span class="visually-hidden">TWF</span> <span>Source</span></h3>
+                </header>
+                <content-box content="main.blurbs.pastEventA"></content-box>
+            </article>
+            </a>
+        </li>
+        <li class="tiles4by4__item"><a class="tiles4by4__content" href="">
+            <article class="content-item">
+                <time class="time-element" datetime="2015-05">May 2015</time>
+                <header class="logo-header">
+                    <h3 class="h3"><span class="visually-hidden">TWF</span> <span>Interactive</span></h3>
+                </header>
+                <content-box content="main.blurbs.pastEventB"></content-box>
+            </article>
+            </a>
+        </li>
+        <li class="tiles4by4__item"><a class="tiles4by4__content" href="">
+            <article class="content-item">
+                <time class="time-element" datetime="2015-05">May 2015</time>
+                <header class="logo-header">
+                    <h3 class="h3"><span class="visually-hidden">TWF</span> <span>Hackaton</span></h3>
+                </header>
+                <content-box content="main.blurbs.pastEventC"></content-box>
+            </article>
+            </a>
+        </li>
+    </ul>
 
 </section>
 <section class="content-section" id="community">
-		community
+    <header class="logo-header">
+        <h3 class="h3"><span class="visually-hidden">TWF</span> <span>Community</span></h3>
+    </header>
+    <ul class="tiles4by4 fading-separator">
+        <li class="tiles4by4__item">
+            <article class="content-item">
+                <header>
+                    <h4 class="h4">Our Mission</h4>
+                </header>
+                <content-box content="main.blurbs.community"></content-box>
+            </article>
+        </li>
+        <li class="tiles4by4__item">
+            <article class="content-item">
+                <header>
+                    <h4 class="h4">We are growing</h4>
+                </header>
+                <content-box content="main.blurbs.community"></content-box>
+            </article>
+
+        </li>
+    </ul>
 </section>
 <footer>
-		<ul>
-			<li><a href="">service logo</a></li>
-			<li><a href="">service logo</a></li>
-			<li><a href="">service logo</a></li>
-			<li><a href="">service logo</a></li>
-			<li><a href="">service logo</a></li>
-		</ul>
+    <ul>
+        <li><a href="">service logo</a></li>
+        <li><a href="">service logo</a></li>
+        <li><a href="">service logo</a></li>
+        <li><a href="">service logo</a></li>
+        <li><a href="">service logo</a></li>
+    </ul>
 </footer>

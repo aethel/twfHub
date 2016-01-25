@@ -1,4 +1,5 @@
-.tiles4by4 {
+.tiles4by4
+{
 	@include display-flex();
 	@include flex-wrap(wrap);
 	width:100%;
@@ -25,4 +26,16 @@
 	.tiles4by4__content {
 		margin:0 0 1.7rem 0;
 	}
+}
+
+@media screen and (max-width: $desktopSmall) {
+
+    .tiles4by4__item {
+        @include flex(1,0,auto); 
+        
+        &:nth-child(even) > .tiles4by4__content,
+        &:nth-child(odd) > .tiles4by4__content {
+		    margin:0 0 1.7rem 0;
+        }    
+    }    
 }
