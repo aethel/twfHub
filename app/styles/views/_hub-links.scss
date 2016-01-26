@@ -1,3 +1,19 @@
 #hub-links {
-	padding:0 17rem;
+    padding:0 17rem;
+}
+
+
+@media screen and (max-width: $desktopSmall) { 
+    #hub-links {
+        padding:0 7rem;
+    }
+
+}
+
+
+@media screen and (max-width: $mobileMedium) { 
+    #hub-links {
+        padding:0 2rem;
+    }
+
 }

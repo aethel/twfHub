@@ -37,5 +37,9 @@
         &:nth-child(odd) > .tiles4by4__content {
 		    margin:0 0 1.7rem 0;
         }    
+        
+        &:last-child {
+		    max-width:100%;
+	    }
     }    
 }

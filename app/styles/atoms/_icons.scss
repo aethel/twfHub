@@ -10,13 +10,13 @@
 .icon-fb {
     &:before {
         @extend %icon;
-        background-position: -4rem -0.3rem;
+        background-position: -4rem -4.3rem;
     }
 
     &:hover,
     &:focus {
         &:before {
-            background-position: -4rem -4.3rem;
+            background-position: -4rem -0.3rem;
         }   
     }
 }
@@ -25,13 +25,13 @@
 .icon-youtube {
     &:before {
         @extend %icon;
-        background-position:-12rem 0.1rem;
+        background-position:-12rem -3.9rem;
     }
     
     &:hover,
     &:focus {
         &:before {
-            background-position: -12rem -4.1rem;
+            background-position: -12rem 0.1rem;
         }   
     }
 }
@@ -39,13 +39,13 @@
 .icon-linkedin {
     &:before {
         @extend %icon;
-        background-position: -8rem 0;
+        background-position: -8rem -4rem;
     }
     
     &:hover,
     &:focus {
         &:before {
-            background-position: -8rem -4rem;
+            background-position: -8rem 0;
         }   
     }
 }
@@ -54,13 +54,13 @@
 .icon-twitter {
     &:before {
         @extend %icon;
-        background-position: 0 0;
+        background-position: 0 -4rem;
     }    
     
     &:hover,
     &:focus {
         &:before {
-            background-position: 0 -4rem;
+            background-position: 0 0;
         }   
     }
 
