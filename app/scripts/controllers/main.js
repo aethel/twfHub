@@ -43,7 +43,7 @@ angular.module('twfHubApp')
 		}
 
 
-var a = document.querySelectorAll('a');
+var a = document.querySelectorAll('.float-nav a');
 		for(var i=0;i<a.length;i++){
 			a[i].addEventListener('click',function(e){
 				e.preventDefault();
