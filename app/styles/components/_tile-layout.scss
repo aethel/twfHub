@@ -31,7 +31,7 @@
 @media screen and (max-width: $desktopSmall) {
 
     .tiles4by4__item {
-        @include flex(1,0,auto); 
+        @include flex(1,0,100%); 
         
         &:nth-child(even) > .tiles4by4__content,
         &:nth-child(odd) > .tiles4by4__content {
