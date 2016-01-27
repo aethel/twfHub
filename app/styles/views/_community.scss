@@ -44,6 +44,10 @@
 @media screen and (max-width: $desktopSmall) { 
     #community {
         padding:0 7rem;
+        
+      .logo-header {
+        margin:5rem 0 3rem 6.5rem;
+      }
     }
 
 }
