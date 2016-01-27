@@ -1,24 +1,60 @@
 #community {
-	padding:0 17rem;
-    
+    padding:0 17rem;
+
     .content-item {
         background: transparent;
     }
-    
+
     .content-item .h4 {
         margin:0 0 1.8rem 0;
     }
-    
+
     .logo-header {
         margin:0 0 9rem 6.5rem;
     }
-    
+
+    .inline-list {
+        margin:3.5rem 0 0 0;
+    }
+
     .inline-list__item .h3 {
         font-size:$defaultFontSize*1.7;
     }
-    
+
     .inline-list__item .logo-header {
         background: url(../../images/logo-micro.svg) no-repeat 0 0.3rem /6.6rem auto transparent;
         padding:0 0 0 7.2rem;
+        margin: 0 0 0 6.5rem;
     }
+
+    [class^="icon-"] {
+        margin:0 1.5rem 0 1.5rem;
+
+        &:hover {
+            cursor:pointer;
+        }
+    }
+}
+
+@media screen and (max-width: $desktopSmall) { 
+    #community {
+        padding:0 7rem;
+    }
+
+}
+
+
+@media screen and (max-width: $mobileMedium) { 
+    #community {
+        padding:0 2rem;
+
+        .logo-header {
+            margin:4rem 0 3rem 6.5rem;
+        }
+
+        [class^="icon-"] {
+            margin:0 0.5rem 0 0.5rem;
+        }
+    }
+
 }
