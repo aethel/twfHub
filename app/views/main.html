@@ -1,4 +1,5 @@
-<nav class="float-nav">
+
+   <nav class="float-nav">
     <ul>
         <li class="float-nav__item"><a class="float-nav__link" href="#intro" ng-click="main.scrollToSection('intro')"></a></li>
         <li class="float-nav__item"><a class="float-nav__link" href="#hub-links" ng-click="main.scrollToSection('hub-links')"></a></li>
@@ -6,7 +7,8 @@
     </ul>
 </nav>
 <section class="content-section pattern-overlay" id="intro">
-    <video-bg class="video-bg" playlist="main.videos"></video-bg>
+   <video-bg mobile-image="'/images/poster.png'" class="video-bg" playlist="main.videos"></video-bg> 
+    
     <header class="main-header">
         <h1>
             <figure class="main-header__figure">
@@ -20,7 +22,6 @@
     <ul class="margin-bottom56">
         <li><a href="">
             <article class="content-item highlighted">
-                <time class="time-element"></time>
                 <header class="logo-header">
                     <h3 class="h3"><span class="visually-hidden">TWF</span><span>Soon</span></h3>
                 </header>

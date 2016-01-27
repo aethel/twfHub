@@ -23,7 +23,7 @@
 
 
 @mixin centringVH($x,$y, $zindex:null) {
-	position: absolute;
+	position: absolute !important;
 	left: $x;
 	top: $y;
 	-webkit-transform:translate(-$x,-$y);
