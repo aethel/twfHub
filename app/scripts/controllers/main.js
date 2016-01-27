@@ -8,7 +8,7 @@
  * Controller of the twfHubApp
  */
 angular.module('twfHubApp')
-	.controller('MainCtrl', ['jsonServiceAPI', function (jsonServiceAPI) {
+	.controller('MainCtrl', ['jsonServiceAPI','$document', function (jsonServiceAPI,$document) {
 		var thisCtrl = this;
 
 			this.awesomeThings = [
@@ -31,10 +31,15 @@ angular.module('twfHubApp')
 
 
 		this.scrollToSection = function(target){
-			var windowTopOffset = window.pageYOffset,
-					targetOffset = document.getElementById(target).getBoundingClientRect().y;
-
-			window.scrollTo(0,windowTopOffset+targetOffset);
+            var duration = 1000;
+            var offset = 20;
+            var scrollTarget = angular.element(document.getElementById(target));
+            $document.scrollToElement(scrollTarget,offset,duration);
+            
+//			var windowTopOffset = window.pageYOffset,
+//					targetOffset = document.getElementById(target).getBoundingClientRect().y;
+//
+//			window.scrollTo(0,windowTopOffset+targetOffset);
 		}
 
 

@@ -34,6 +34,11 @@
             cursor:pointer;
         }
     }
+    
+    .icon-youtube,
+    .icon-twitter{
+        margin: 0 1.5rem 0 2.3rem
+    }
 }
 
 @media screen and (max-width: $desktopSmall) { 

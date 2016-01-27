@@ -16,7 +16,8 @@ angular
 		'ngSanitize',
 		'ngTouch',
 		'twfHubApp.jsonService',
-		'angularVideoBg'
+		'angularVideoBg',
+        'duScroll'
 	])
 	.config(function ($routeProvider) {
 		$routeProvider
