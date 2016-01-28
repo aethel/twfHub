@@ -4,7 +4,7 @@
     position: relative;
     transition:  all 0.75s;
     transform-style: preserve-3d;
-    
+
     &.highlighted .paragraph {
         font-weight:bold;
     }
@@ -34,18 +34,18 @@
         left: 0;
         height:100%;
         transition:  all 0.3s;
-        background:url(../../images/logo-large.svg) no-repeat 1rem 0/auto 100%  transparent;
+        background:url(../../images/logo-large-background.svg) no-repeat 1rem 0/auto 100%  transparent;
         z-index: -1;
     }
 
 
 
     &:hover {
-            
+
         &.highlighted::before {
             content: '';
             display: block;
-            width: 65.9%;
+            width: 90%;
             height: 100%;
             position: absolute;
             top: 0;
@@ -66,8 +66,7 @@
             top: 0;
             left: 0;
             height:100%;
-            transition:  all 0.3s;
-            background:url(../../images/logo-large.svg) no-repeat 100% 0/auto 100%  transparent;
+            background:url(../../images/logo-large-background.svg) no-repeat 100% 0/auto 100%  transparent;
             z-index: -1;
         }
 
@@ -77,6 +76,22 @@
     .time-element{
         margin:0 0 2rem 0;
         display: block;
+    }
+}
+
+@media screen and (max-width: $mobileMedium) {
+    .content-item {
+
+        &:hover {
+
+            &.highlighted::before {
+                width:100%;
+            }
+
+            &.highlighted::after {
+                display:none;
+            }
+        }
     }
 }
 
