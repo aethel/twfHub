@@ -3,3 +3,8 @@ a, a:active, a:focus{
 	text-decoration:none;
 	display: block;
 }
+
+a[href=""]:hover,
+a[href=""]:focus {
+    cursor:default;
+}

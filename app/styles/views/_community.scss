@@ -19,6 +19,11 @@
 
     .inline-list__item .h3 {
         font-size:$defaultFontSize*1.7;
+        
+        &:hover,
+        &:focus {
+            color:$primaryAccentColour;
+        }
     }
 
     .inline-list__item .logo-header {
