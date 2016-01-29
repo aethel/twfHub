@@ -83,14 +83,13 @@
     }
     
     .inline-list__item {
-        display: inline-block;
-        width: 49%;
+        display: block;
         text-align: center;
+        
+        &:first-child > a {
+            display: inline-block;
+        }
     }
     
-     .inline-list__item:last-child {
-        display: inline-block;
-        width: 100%;
-        text-align: center;
-    }
+   
 }
