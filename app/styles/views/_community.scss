@@ -63,12 +63,34 @@
         padding:0 2rem;
 
         .logo-header {
-            margin:4rem 0 3rem 6.5rem;
+            margin:4rem 0 0 2.5rem;
         }
 
+        .inline-list__item .logo-header {
+             margin: 0 0 0 2.5rem;
+        }
+        
         [class^="icon-"] {
             margin:0 0.5rem 0 0.5rem;
         }
     }
 
+}
+
+@media screen and (max-width: $mobileSmall) { 
+    .inline-list {
+        display: block;
+    }
+    
+    .inline-list__item {
+        display: inline-block;
+        width: 49%;
+        text-align: center;
+    }
+    
+     .inline-list__item:last-child {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+    }
 }

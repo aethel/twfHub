@@ -23,7 +23,11 @@
 }
 
 @media screen and (max-width: $mobileMedium) {
-	.tiles4by4__content {
+    .tiles4by4__item  {
+        width:100%;
+    }
+    
+    .tiles4by4__content {
 		margin:0 0 1.7rem 0;
 	}
 }

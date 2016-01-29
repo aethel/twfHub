@@ -1,7 +1,7 @@
 .logo-header {
 	background-image: url(../../images/logo-small-sprite.svg);
 	background-repeat: no-repeat;
-	background-position: 0 -10%;
+	background-position: 0 -9%;
 	background-size: 9rem auto;
 	background-color: transparent;
 	padding:0 0 0 10rem;
@@ -10,4 +10,17 @@
 
 .logo-header > .h3 {
     line-height: 0.9;
+}
+
+@media screen and (max-width: $mobileSmall) {
+    
+    .logo-header {
+        background-size: 21% auto;
+        background-position: 0 -8%;
+        padding:0 0 0 19vw;    
+    }
+    
+    .logo-header > h3 {
+        font-size: 7vw;
+    }
 }

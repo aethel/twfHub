@@ -50,11 +50,6 @@
             position: absolute;
             top: 0;
             left: 0;
-            //  	height: calc(100% - 14.8rem);
-            //	transition: all 0.5s;
-            //	border-left: 4rem solid $primaryAccentColour;
-            //	border-top: 7.4rem solid transparent;
-            //	border-bottom: 7.4rem solid transparent;
         }     
 
         &.highlighted::after { 
@@ -81,6 +76,7 @@
 
 @media screen and (max-width: $mobileMedium) {
     .content-item {
+        padding:2.8rem 2.6rem 5rem 2.5rem;
 
         &:hover {
 
@@ -106,4 +102,13 @@
     .logo-header {
         background-position: 0 102%;
     } 
+}
+
+@media screen and (max-width: $mobileSmall) {
+    .content-item:hover,
+    .content-item:focus {
+        .logo-header {
+            background-position: 0 115%;
+        } 
+    }
 }
