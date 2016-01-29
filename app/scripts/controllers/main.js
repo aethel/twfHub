@@ -35,11 +35,6 @@ angular.module('twfHubApp')
             var offset = 20;
             var scrollTarget = angular.element(document.getElementById(target));
             $document.scrollToElement(scrollTarget,offset,duration);
-            
-//			var windowTopOffset = window.pageYOffset,
-//					targetOffset = document.getElementById(target).getBoundingClientRect().y;
-//
-//			window.scrollTo(0,windowTopOffset+targetOffset);
 		}
 
 

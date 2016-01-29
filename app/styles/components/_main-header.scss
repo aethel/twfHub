@@ -1,42 +1,49 @@
 .main-header {
-	@include centringVH(50%,50%,9999);
-	width:33%;
-	max-width: 34rem;
+    @include centringVH(50%,50%,9999);
+    width:33%;
+    max-width: 34rem;
 
-	&::after {
-		content: '';
-		width: 2.4rem;
-		height: 2.4rem;
-		display: block;
-		border-left: 0.1rem solid $primaryTextColour;
-		border-bottom: 0.1rem solid $primaryTextColour;
-		transform: rotate(-45deg);
-		margin:4.5rem auto 0;
-	}
+    &:hover,
+    &:focus {
+        cursor:pointer;
+    }
+}
+
+.main-header__link {
+    &::after {
+        content: '';
+        width: 2.4rem;
+        height: 2.4rem;
+        display: block;
+        border-left: 0.1rem solid $primaryTextColour;
+        border-bottom: 0.1rem solid $primaryTextColour;
+        transform: rotate(-45deg);
+        margin:4.5rem auto 0;
+    }
 }
 
 .main-header__figure {
-	margin:0 0 6.6rem;
+    margin:0 0 6.6rem;
 }
 
 .main-header__tagline {
-	@include customFont('Lato');
-	color: $primaryTextColour;
-	font-size:$defaultFontSize*1.1;
-	text-transform: uppercase;
-	text-align: center;
-	display: block;
+    @include customFont('Lato');
+    color: $primaryTextColour;
+    font-size:$defaultFontSize*1.1;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
 }
 
 
 @media screen and (max-width: $mobileMedium) {
 
-	.main-header{
-		@include centringVH(50%,50%);
-		width:60%
-	}
+    .main-header{
+        @include centringVH(50%,50%);
+        width:60%
+    }
 
-	.main-header__tagline {
-		font-size:5vw;
-	}
+    .main-header__tagline {
+        font-size:5vw;
+    }
 }
