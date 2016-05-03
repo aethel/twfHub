@@ -11,34 +11,29 @@ angular.module('twfHubApp')
 	.controller('MainCtrl', ['jsonServiceAPI','$document', function (jsonServiceAPI,$document) {
 		var thisCtrl = this;
 
-			this.awesomeThings = [
-			'HTML5 Boilerplate',
-			'AngularJS',
-			'Karma'
-		];
 
 		jsonServiceAPI.getData().success(function(data){
-				thisCtrl.blurbs = data;
+			thisCtrl.blurbs = data;
 		});
 
 		thisCtrl.videos = [{
-				videoId: '1_X6uuDjU9E'
+			videoId: '1_X6uuDjU9E'
 		},{
-				videoId: 'p6kH_rtjdC4'
+			videoId: 'p6kH_rtjdC4'
 		},{
-				videoId: 'SbPZOeEwLDM'
+			videoId: 'SbPZOeEwLDM'
 		}];
 
 
 		this.scrollToSection = function(target){
-            var duration = 1000;
-            var offset = 20;
-            var scrollTarget = angular.element(document.getElementById(target));
-            $document.scrollToElement(scrollTarget,offset,duration);
+			var duration = 1000;
+			var offset = 20;
+			var scrollTarget = angular.element(document.getElementById(target));
+			$document.scrollToElement(scrollTarget,offset,duration);
 		}
 
 
-var a = document.querySelectorAll('.float-nav a');
+		var a = document.querySelectorAll('.float-nav a');
 		for(var i=0;i<a.length;i++){
 			a[i].addEventListener('click',function(e){
 				e.preventDefault();
